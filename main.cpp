@@ -62,6 +62,7 @@ int main() {
   delete s_graph;
   std::cout << "-=Arc Graph=-\n";
   bfs(*a_graph, 1, [](int v) { std::cout << v << ' '; });
+  delete a_graph;
 
   return EXIT_SUCCESS;
 }
